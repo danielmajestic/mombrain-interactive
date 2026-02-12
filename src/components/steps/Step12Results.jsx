@@ -9,7 +9,7 @@ const BENEFITS = [
 
 const TESTIMONIALS = [
   { text: 'I can finally hold a conversation without losing my train of thought.', name: 'Lauren B.', age: '38' },
-  { text: 'My kids noticed the difference before I did. "Mom, you seem happier."', name: 'Danielle W.', age: '42' },
+  { text: 'My kids noticed the difference before I did. \u201CMom, you seem happier.\u201D', name: 'Danielle W.', age: '42' },
   { text: '3 weeks in and I woke up feeling genuinely clear-headed for the first time in years.', name: 'Christina M.', age: '35' },
 ]
 
@@ -141,7 +141,7 @@ export default function Step12Results({ answers }) {
               transition={{ delay: 0.8 + i * 0.15 }}
               className="bg-white rounded-xl p-4 border border-cream-dark"
             >
-              <p className="text-sm text-warm-dark italic leading-relaxed">"{t.text}"</p>
+              <p className="text-sm text-warm-dark italic leading-relaxed">&ldquo;{t.text}&rdquo;</p>
               <p className="text-xs text-warm-gray mt-2">— {t.name}, age {t.age}</p>
             </motion.div>
           ))}
