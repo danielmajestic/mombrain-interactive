@@ -61,31 +61,31 @@ export default function Step8Slider({ onNext, onBack }) {
         className="relative w-full max-w-sm aspect-[3/4] rounded-2xl overflow-hidden shadow-lg select-none touch-none cursor-ew-resize"
       >
         {/* AFTER side (full background) */}
-        <div className="absolute inset-0 bg-gradient-to-br from-sage-light via-sage/30 to-cream flex flex-col items-center justify-center p-6">
-          <div className="text-center">
-            <div className="w-20 h-20 rounded-full bg-sage/30 flex items-center justify-center mx-auto mb-4">
-              <span className="text-4xl">😊</span>
+        <div className="absolute inset-0 bg-gradient-to-br from-sage-light via-sage/30 to-cream">
+          <div className="absolute inset-y-0 right-0 w-1/2 flex flex-col items-center justify-center p-4">
+            <div className="w-16 h-16 rounded-full bg-sage/30 flex items-center justify-center mx-auto mb-3">
+              <span className="text-3xl">😊</span>
             </div>
-            <p className="font-heading font-semibold text-sage-dark text-lg">After</p>
-            <p className="text-sm text-warm-gray mt-2">Clear-headed</p>
-            <p className="text-sm text-warm-gray">Energized</p>
-            <p className="text-sm text-warm-gray">Present with her kids</p>
+            <p className="font-heading font-semibold text-sage-dark">After</p>
+            <p className="text-xs text-warm-gray mt-2">Clear-headed</p>
+            <p className="text-xs text-warm-gray">Energized</p>
+            <p className="text-xs text-warm-gray">Present with her kids</p>
           </div>
         </div>
 
         {/* BEFORE side (clipped overlay) */}
         <div
-          className="absolute inset-0 bg-gradient-to-br from-blush-light via-blush/30 to-cream-dark flex flex-col items-center justify-center p-6"
+          className="absolute inset-0 bg-gradient-to-br from-blush-light via-blush/30 to-cream-dark"
           style={{ clipPath: `inset(0 ${100 - sliderPos}% 0 0)` }}
         >
-          <div className="text-center">
-            <div className="w-20 h-20 rounded-full bg-blush/30 flex items-center justify-center mx-auto mb-4">
-              <span className="text-4xl">😩</span>
+          <div className="absolute inset-y-0 left-0 w-1/2 flex flex-col items-center justify-center p-4">
+            <div className="w-16 h-16 rounded-full bg-blush/30 flex items-center justify-center mx-auto mb-3">
+              <span className="text-3xl">😩</span>
             </div>
-            <p className="font-heading font-semibold text-blush-dark text-lg">Before</p>
-            <p className="text-sm text-warm-gray mt-2">Foggy & forgetful</p>
-            <p className="text-sm text-warm-gray">Exhausted by 2pm</p>
-            <p className="text-sm text-warm-gray">Missing moments</p>
+            <p className="font-heading font-semibold text-blush-dark">Before</p>
+            <p className="text-xs text-warm-gray mt-2">Foggy & forgetful</p>
+            <p className="text-xs text-warm-gray">Exhausted by 2pm</p>
+            <p className="text-xs text-warm-gray">Missing moments</p>
           </div>
         </div>
 
